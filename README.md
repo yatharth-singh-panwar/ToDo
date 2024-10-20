@@ -1,22 +1,48 @@
 # TODO
 
-Create a simple Todo application that store todos in a in-memory storage.
+Welcome to **TODO**, a sleek and modern task management application designed to help you stay focused and organized. With a user-friendly interface and a minimalist design, **TODO** provides a distraction-free environment to boost your productivity.
+
+![TODO App Screenshot](./ProductUI.png)
 
 
-### Before writing code in backend.
+### Product UI
+Designed with a minimalist approach, the user interface ensures that you can focus on what matters: **your tasks**. The modern design minimizes distractions, allowing you to channel your productivity into getting things done.
 
- go inside `week-6/6.1-todo/backend`
+
+## Features
+
+With **TODO**, you can:
+- 📝 **Sign In / Sign Up**: Securely create an account or log in to start managing your tasks.
+- ➕ **Create New To-Dos**: Add tasks effortlessly and organize them in your task list.
+- 🗑️ **Update & Delete To-Dos**: Modify existing tasks or remove them when no longer needed.
+- ✅ **Mark Tasks as Done**: Keep track of your progress by marking tasks as completed.
+- 📋 **View All Your To-Dos**: See your current tasks at a glance to stay on top of things.
+
+
+
+## 🛠️ Getting Started
+
+Ready to get started with **TODO**? Follow these steps to set up the project locally:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/todo-app.git
+cd todo-app
 ```
+
+### 2. Install all the dependencies
+```bash
+cd backend
 npm install
 ```
 
-### Reference UI:
+### 3. Run the backend server
+```bash
+node index.js
+```
 
-![Image](https://utfs.io/f/3e65e2d3-a5b1-4ce8-aa07-611a54d6363a-2t1eni.png)
-
-#### please don't copy, create a great UI.
-
-The task is to create a basic fullstack application, where
-1) Users can signin/ signup
-2) Users can create/delete/update TODos
-3) Users can see their existing todos and mark them as done.
+### 4. Navigate to the localhost:3001 port on your browser
+```bash
+#In your broser, type
+http://localhost:3001
+```
