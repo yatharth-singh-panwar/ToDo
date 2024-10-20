@@ -26,7 +26,7 @@ Ready to get started with **TODO**? Follow these steps to set up the project loc
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/todo-app.git
+git clone https://github.com/yatharth-singh-panwar/ToDo.git
 cd todo-app
 ```
 
