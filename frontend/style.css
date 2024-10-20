@@ -1,0 +1,286 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    background-image: url("axiom-pattern.png");
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.user-information{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-parent{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+    column-gap: 10%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+}
+
+.completedTasks{
+    flex: 0 0 35%;
+    min-height: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.tasksAndInput{
+    flex: 0 0 60%;
+    min-height: 10%;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 350px;
+}
+
+  
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+  
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap:10%;
+}
+  
+#todo-input {
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.input-container input {
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: 70%;  
+    height: auto;
+    padding: 9px;
+}
+
+.edit-task-container {
+    min-width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 100%;          
+}
+.edit-box-parent {
+    /* max-width: 350px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.edit-box-parent > #todo-list{
+    max-width: 200px;
+    margin-right: 35px;
+}
+.edit-task-container textarea {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 70%;  
+    height: auto;
+    padding: 9px;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+
+}
+
+.edit-task{
+    background-color: white;
+    border-radius: 3px;
+    font-size: 15px;    
+    min-height: 60px;
+}
+
+  
+#add-todo-btn {
+    font-size: 15px;
+    background-color: #2EDCAD;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+  
+#todo-list , #completed-list{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    width: 350px;
+    padding: 0;
+    list-style: none;
+}
+  
+#todo-list-task-container , #completed-list {
+    background-color: #FBD207;
+    border-style: solid ;
+    min-width: 250px;
+    border-radius: 5px;
+    border-width: 2px;
+    font-size:16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.todo-list-item-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    max-width: 350px;
+    min-width: 350px;
+    justify-content: center;
+    align-items: center;   
+}
+.completed-list{
+    max-width: 65%;
+}
+.todo-list-item-container > #todo-list-task-container > p ,#completed-list > p{
+    width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+
+}
+
+#delete-to-do:hover,#completed-to-do:hover, #add-todo-btn:hover, #toggleButton:hover, #edit-to-do:hover{
+    transform: scale(1.14);
+    transition: transform 0.1s ease-in-out;
+}
+
+#delete-to-do {
+    background-color: #f9f9f9;
+    border-radius: 1px;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#delete-to-do:hover{
+    background-color:  #212122;
+    border-radius: 9px; 
+    border-style: solid; 
+    border-width: 1px;  
+}
+
+#toggleButton{
+    background-color: #504338;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#completed-to-do{
+    /* background-color: #2EDCAD; */
+    border-radius: 1px;
+    border-radius: 3px;
+    border-style: solid; 
+    background-color: #f9f9f9;
+    /* border-width: 2px; */
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#reject-changes, #save-changes{
+    border-radius: 3px;
+    border-style: solid; 
+    background-color: #f9f9f9;
+    border-width: 2px; 
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+#reject-changes{
+    margin-left: 35px;
+}
+#reject-changes:hover , #save-changes:hover{
+    border-radius: 9px; 
+    border-style: solid; 
+    border-width: 1px;  
+}
+
+#completed-to-do:hover{
+    background-color: #2EDCAD;
+    border-radius: 9px; 
+    border-style: solid; 
+    border-width: 1px;  
+}
+#edit-to-do{
+    background-color: #f9f9f9;
+    border-radius: 1px;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#edit-to-do:hover{
+    border-radius: 9px; 
+    border-style: solid; 
+    border-width: 1px;  
+}
+#todo-list li > p {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+} 
