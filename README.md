@@ -27,18 +27,20 @@ Ready to get started with **TODO**? Follow these steps to set up the project loc
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/yatharth-singh-panwar/ToDo.git
-cd todo-app
+cd ToDo
 ```
 
 ### 2. Install all the dependencies
 ```bash
+npm install
 cd backend
 npm install
+cd ..
 ```
 
 ### 3. Run the backend server
 ```bash
-node index.js
+node backend/index.js
 ```
 
 ### 4. Navigate to the localhost:3001 port on your browser
