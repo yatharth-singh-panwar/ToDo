@@ -32,15 +32,13 @@ cd ToDo
 
 ### 2. Install all the dependencies
 ```bash
-npm install
 cd backend
 npm install
-cd ..
 ```
 
 ### 3. Run the backend server
 ```bash
-node backend/index.js
+node index.js
 ```
 
 ### 4. Navigate to the localhost:3001 port on your browser
